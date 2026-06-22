@@ -1,6 +1,6 @@
 # 1337 Bot
 
-An automated Python script that types and submits LeetCode solutions directly into your browser. Check out the profile it was deployed on [here](https://leetcode.com/u/prag1337bot/).
+An automated Python script that types and submits LeetCode solutions directly into your browser. Check out the profile it was deployed on [here](https://leetcode.com/u/1337bot/).
 
 ### Overview
 
@@ -22,7 +22,7 @@ The project runs two Python scripts simultaneously:
 
 #### 2. The Live Watchdog (`watchdog.py`)
 * **What it Does:** Monitors the live account score to enforce a hard stop.
-* **How it Works:** Every 10 seconds, this script queries LeetCode's public data gateway to read the total solved number. The exact moment the profile hits **1337** unique solved questions, it triggers a system command to instantly kill the submitter script so it doesn't go a single digit over the target.
+* **How it Works:** Every 10 seconds, this script queries LeetCode's public data gateway to read the total solved number. The exact moment the profile hits a set number of unique solved questions, it triggers a system command to instantly kill the submitter script so it doesn't go a single digit over the target.
 
 ---
 
@@ -35,18 +35,10 @@ The original concept involved scraping solutions on the fly, but web layouts pro
 During live runs on slow internet, the bot initially typed too fast before the website could finish loading the text window. This resulted in blank text submissions and compilation errors. The script was updated to give the browser up to 1 second to fully render the code editor before trying to execute the typing sequence.
 
 #### Phase 3 — Hitting Server Boundaries
-The bot operated smoothly at about 2 submissions per minute. After 500 total submissions and solving **385 questions**, LeetCode's backend triggered a temporary server-side rate limit penalty. The experiment is currently paused to let the account cooldown before running the final sprint to 1337.
+The bot operated smoothly at about 2 submissions per minute. After 500 total submissions and solving **385 questions** in 3 hours, LeetCode's backend triggered a temporary server-side rate limit penalty.
 
 <p align="center">
 <img src="Assets/385.jpeg" width="800"></p>
-
----
-
-### Project Status
-
-* **Target Milestone:** 1337 Solved Questions
-* **Current Benchmarks:** 385 Unique Problems Solved (~500 Total Submissions)
-* **Current Status:** In Progress (Waiting out the LeetCode rate limit cooldown before final completion)
 
 ---
 
