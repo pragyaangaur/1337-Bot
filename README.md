@@ -1,6 +1,6 @@
 # 1337 Bot
 
-An automated Python script that types and submits LeetCode solutions directly into your browser.
+An automated Python script that types and submits LeetCode solutions directly into your browser. Check out the profile it was deployed on [here](https://leetcode.com/u/prag1337bot/).
 
 ### Overview
 
@@ -37,13 +37,16 @@ During live runs on slow internet, the bot initially typed too fast before the w
 #### Phase 3 — Hitting Server Boundaries
 The bot operated smoothly at about 2 submissions per minute. After 500 total submissions and solving **385 questions**, LeetCode's backend triggered a temporary server-side rate limit penalty. The experiment is currently paused to let the account cooldown before running the final sprint to 1337.
 
+<p align="center">
+<img src="Assets/385.jpeg" width="800"></p>
+
 ---
 
 ### Project Status
 
 * **Target Milestone:** 1337 Solved Questions
 * **Current Benchmarks:** 385 Unique Problems Solved (~500 Total Submissions)
-* **Current Status:** ⚠️ **In Progress** (Waiting out the LeetCode rate limit cooldown before final completion)
+* **Current Status:** In Progress (Waiting out the LeetCode rate limit cooldown before final completion)
 
 ---
 
