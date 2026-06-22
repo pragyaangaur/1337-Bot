@@ -2,7 +2,7 @@ import requests
 import time
 import os
 
-USERNAME = "prag1337bot"
+USERNAME = "1337Bot"
 TARGET = 1337
 
 def get_solved_count():
