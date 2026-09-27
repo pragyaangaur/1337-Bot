@@ -52,6 +52,7 @@ while True:
             print("Could not fetch profile. Make sure your username is correct.")
             
     except Exception as e:
-        pass
+        # Keep watching after a network hiccup, but say what went wrong.
+        print(f"Check failed, retrying: {e}")
         
     time.sleep(10)
