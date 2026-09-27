@@ -44,7 +44,7 @@ while True:
             print(f"Watchdog tracking: {current_solved} / {TARGET} solved.")
             
             if current_solved >= TARGET:
-                print(f"\Target {TARGET} hit.")
+                print(f"\nTarget {TARGET} hit.")
                 os.system("pkill -f submitter.py")
                 print("Exiting.")
                 break
